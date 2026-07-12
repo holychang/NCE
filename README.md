@@ -1,115 +1,109 @@
-# 《新概念英语》在线学习平台
 
-一个功能完整的《新概念英语》在线学习网站，支持音频点读、歌词同步显示和交互式学习体验。
+# 新概念英语 · 全四册在线点读系统
 
-## 🚀 快速部署
+[![Stars](https://img.shields.io/github/stars/ichochy/nce.svg?style=social)](https://github.com/ichochy/nce/stargazers)
+[![License](https://img.shields.io/github/license/ichochy/nce)](https://github.com/ichochy/nce/blob/main/LICENSE)
+[![Demo](https://img.shields.io/badge/Demo-在线体验-brightgreen)](http://nce.ichochy.com)
 
-### 通过Vercel一键部署
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/new-concept-english)
-
-### 手动部署步骤
-
-1. **准备代码**
-   ```bash
-   git clone https://github.com/your-username/new-concept-english
-   cd new-concept-english
-   ```
-
-2. **推送到GitHub**
-   ```bash
-   git add .
-   git commit -m "Initial commit"
-   git push origin main
-   ```
-
-3. **Vercel部署**
-   - 访问 [Vercel](https://vercel.com)
-   - 导入GitHub仓库
-   - 自动检测为静态网站
-   - 点击部署
-
-4. **绑定自定义域名**
-   - 在Vercel项目设置中添加域名 `nce.ichochy.com`
-   - 在Cloudflare DNS中添加CNAME记录：
-     ```
-     Type: CNAME
-     Name: nce
-     Content: cname.vercel-dns.com
-     ```
-
-## 📁 项目结构
-
-```
-├── index.html          # 主页面
-├── book.html           # 课本页面  
-├── lesson.html         # 课文页面
-├── vercel.json         # Vercel配置
-├── CNAME              # 域名配置
-├── static/            # 静态资源
-│   ├── base.css       # 基础样式
-│   ├── index.css      # 首页样式
-│   ├── book.css       # 课本页面样式
-│   ├── lesson.css     # 课文页面样式
-│   ├── book.js        # 课本页面逻辑
-│   ├── lesson.js      # 课文页面逻辑
-│   └── data.json      # 课程数据
-├── images/            # 教材封面
-└── NCE1-4/           # 四册教材资源
-    ├── *.mp3         # 音频文件
-    └── *.lrc         # 歌词文件
-```
-
-## 🎯 功能特性
-
-- ✅ 完整的四册《新概念英语》教材
-- ✅ 音频点读与歌词同步显示
-- ✅ 点击句子分段播放
-- ✅ 响应式设计，支持移动端
-- ✅ 深色主题，护眼设计
-- ✅ 流畅的动画效果
-- ✅ 离线缓存支持
-
-## 🔧 技术栈
-
-- **前端**: HTML5, CSS3, JavaScript ES6+
-- **部署**: Vercel (静态网站托管)
-- **域名**: Cloudflare DNS管理
-- **音频**: Web Audio API
-- **样式**: Flexbox + Grid布局
-
-## 📊 内容规模
-
-| 教材 | 课程数量 | 级别 |
-|------|----------|------|
-| 第一册 | 144课 | 英语初阶 |
-| 第二册 | 96课 | 实践与进步 |
-| 第三册 | 60课 | 培养技能 |
-| 第四册 | 48课 | 流利英语 |
-
-**总计**: 348课，696个多媒体文件
-
-## 🔄 更新维护
-
-### 添加新课程
-1. 在对应教材目录添加MP3和LRC文件
-2. 更新 `static/data.json` 中的课程列表
-3. 重新部署到Vercel
-
-### 自定义域名
-修改 `CNAME` 文件中的域名，然后在Vercel和Cloudflare中更新配置。
-
-## 📄 许可证
-
-MIT License - 详见 [LICENSE](LICENSE) 文件
-
-## 🤝 贡献
-
-欢迎提交Issue和Pull Request来改进这个项目！
+**《New Concept English》** 全四册在线课文朗读、**单句点读**、中英对照，随时随地自学英语！
 
 ---
 
-**部署状态**: ✅ 已配置Vercel部署  
-**域名绑定**: ✅ 支持自定义域名 `nce.ichochy.com`  
-**HTTPS**: ✅ 自动启用  
-**CDN**: ✅ 全球加速
+### ✨ 主要功能
+
+- 🎧 **美音课文朗读**：流畅自然的原版音频
+- 📍 **单句点读**：点击任意句子即可跟读练习
+- 📖 **中英对照**：逐句显示中英文，便于理解
+- 📱 **响应式设计**：手机、平板、电脑均可流畅使用
+- 🚀 **无需安装**：浏览器直接访问，随时学习
+
+**在线体验**：👉 **[http://nce.ichochy.com](http://nce.ichochy.com)**
+
+---
+
+### 📸 截图
+
+![pc.jpg](screenshot/pc.png)
+
+![mobile.jpg](screenshot/mobile.png)
+
+### 📚 四册学习指南
+
+#### 📕 第一册：《First Things First》
+**目标**：打好语音与基础  
+**课数**：144课 | **词汇量**：约 600 词  
+适合 **零基础** 学习者，建立语感和正确发音。
+
+#### 📘 第二册：《Practice and Progress》
+**目标**：语法体系与听说读写同步提升  
+**课数**：96课 | **词汇量**：约 1500 词  
+适合有基础的学习者，系统梳理语法。
+
+#### 📙 第三册：《Developing Skills》
+**目标**：进阶阅读与复杂句型  
+**课数**：60课 | **词汇量**：约 2500 词  
+适合想提高综合能力、阅读原版材料的学习者。
+
+#### 📗 第四册：《Fluency in English》
+**目标**：接近流利表达与学术阅读  
+**课数**：48课 | **词汇量**：约 3500–4000 词  
+适合高阶学习者、考研/雅思/托福备考。
+
+**推荐学习路径**：按册顺序学习 → 第一册打基础 → 第四册冲刺流利。
+
+---
+
+### 🛠️ 技术与资源
+
+- **前端**：HTML + CSS + JavaScript（纯静态实现）
+- **音频来源**：美音音频来自 [tangx/New-Concept-English](https://github.com/tangx/New-Concept-English)
+- **中文字幕**：由 Gemini AI 生成（已尽力优化，但可能存在少量错误，欢迎大家指正与贡献）
+- **翻译脚本**：作者自研 Python 工具 [iGSTT](https://ichochy.com/posts/shell/20251015.html)
+
+---
+
+### ⚠️ 说明与版权
+
+- 本项目**仅供个人学习研究使用**，非商业用途。
+- 所有内容来源于互联网，我们不拥有版权。
+- 如有侵权，请联系 [me@ichochy.com](mailto:me@ichochy.com) 及时处理。
+- **强烈建议**支持正版，购买官方教材与音频。
+
+---
+
+### 🤝 如何贡献
+
+欢迎大家一起完善这个项目！
+
+- 提交 Issue 反馈翻译错误、功能建议
+- Pull Request 改进代码、修正字幕、添加新功能
+- 分享给更多英语学习者
+
+---
+
+### ❤️ 支持作者
+
+我是 80 后码农，目前正在与白血病（CMML）抗争。  
+工作已暂停，在家无聊就重学英语，就有了这个项目。
+
+如果这个项目对你学习英语有帮助，欢迎：
+
+- **点个 Star** ⭐（这是对我最大的鼓励）
+- 打赏一杯咖啡 / 一点生命值（可选）
+
+<img src="sponsor.jpg" width="200" />
+
+**感谢每一位使用和支持的朋友！**  
+你的每一次学习，都是对坚持最好的回报。
+
+---
+
+**Keep learning — progress comes with persistence.**  
+**坚持学习，每一天都有进步。**
+
+---
+
+**作者**：iChochy  
+**Blog**：https://ichochy.com  
+**Email**：me@ichochy.com  
+**GitHub**：https://github.com/ichochy/nce
